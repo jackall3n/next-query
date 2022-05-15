@@ -49,12 +49,8 @@ function useQuery<T extends Record<string, any>>(types?: T): Query<T> {
 
   const serialized = serializeTypes(types ?? {});
 
-  console.log(serialized);
-
   return useMemo(() => {
     const deserialized = deserializeTypes(serialized);
-
-    console.log(deserialized);
 
     const [, query] = router.asPath.split('?');
 
@@ -64,18 +60,12 @@ function useQuery<T extends Record<string, any>>(types?: T): Query<T> {
 
     const entries = Object.entries(deserialized)
 
-    console.log(parsed)
-
     if (!entries.length) {
       return parsed;
     }
 
     return entries.reduce((query, [key, type]) => {
       const value = parsed[key] as string | string[];
-
-      // if (value === undefined) {
-      //   return query
-      // }
 
       const result = (() => {
         if (!Array.isArray(type)) {
