@@ -1,6 +1,7 @@
 {
   "name": "next-query",
-  "version": "1.3.0",
+  "description": "A Next.js hook designed to parse and return query-string params on every render, even on load",
+  "version": "1.4.0",
   "main": "index.js",
   "keywords": [
     "react",
@@ -9,6 +10,13 @@
     "query-string",
     "hooks"
   ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "yarn build"
+  },
+  "repository": "https://github.com/jackall3n/next-query",
+  "homepage": "https://github.com/jackall3n/next-query#readme",
+  "readme": "https://github.com/jackall3n/next-query#readme",
   "types": "index.d.ts",
   "license": "MIT",
   "devDependencies": {
