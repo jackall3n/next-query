@@ -1,7 +1,14 @@
 {
   "name": "next-query",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "index.js",
+  "keywords": [
+    "react",
+    "next",
+    "query",
+    "query-string",
+    "hooks"
+  ],
   "types": "index.d.ts",
   "license": "MIT",
   "devDependencies": {
