@@ -5,32 +5,6 @@ import querystring from 'query-string';
 type BaseTypes = typeof Boolean | typeof Number | typeof String
 type Types = BaseTypes | BaseTypes[]
 
-// export function useQuery(types: Record<string, Types>): string | string[];
-// export function useQuery(key: string): string | string[];
-// export function useQuery<Keys extends string, Arrays extends Keys = never>(...keys: string[]): { [P in Keys]: Arrays[P] extends never ? string : string[] };
-// export function useQuery(...keys: string[]) {
-//   const router = useRouter()
-//
-//   return useMemo(() => {
-//     const [, query] = router.asPath.split('?');
-//
-//     const parsed = querystring.parse(query);
-//
-//     if (!keys.length) {
-//       return parsed
-//     }
-//
-//     if (keys.length === 1) {
-//       return parsed[keys[0]]
-//     }
-//
-//     return keys.reduce((query, key) => ({
-//       ...query,
-//       [key]: parsed[key]
-//     }), {})
-//   }, [router.asPath, keys]);
-// }
-
 type IsString<T> = T extends typeof String ? true : T extends string ? true : false;
 type IsBoolean<T> = T extends typeof Boolean ? true : false;
 type IsNumber<T> = T extends typeof Number ? true : false;
