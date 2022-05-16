@@ -160,6 +160,13 @@ postcss@8.4.5:
     picocolors "^1.0.0"
     source-map-js "^1.0.1"
 
+query-parsed@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/query-parsed/-/query-parsed-1.4.0.tgz#6168e424bee4fbbab2c4a788668808a0ac671c70"
+  integrity sha512-ks0Ac3CnYk6KPh7YLzQoNDd5FqzUt/AdJDBbktuvVMB0c3JQ+yW9XQduVlxxmPzAK63PePJcASRBsL2yNEQD1Q==
+  dependencies:
+    query-string "^7.1.1"
+
 query-string@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.1.1.tgz#754620669db978625a90f635f12617c271a088e1"
