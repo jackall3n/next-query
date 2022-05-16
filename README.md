@@ -27,7 +27,8 @@ yarn add next-query
 import useQuery from 'next-query';
 
 function Page() {
-  const { id } = useQuery(); // Returns => { id: string | string[] };
+  // Returns => { id: string | string[] };
+  const { id } = useQuery();
   
   ...
 }
@@ -39,7 +40,8 @@ function Page() {
 import useQuery from 'next-query';
 
 function Page() {
-  const { id } = useQuery<{ id: string }>(); // Return Type => { id: string };
+  // Return Type => { id: string };
+  const { id } = useQuery<{ id: string }>();
   
   ...
 }
@@ -51,7 +53,8 @@ function Page() {
 import useQuery from 'next-query';
 
 function Page() {
-  const { id } = useQuery({ id: Number }); // Return Type => { id: number };
+  // Return Type => { id: number };
+  const { id } = useQuery({ id: Number });
   
   ...
 }
@@ -65,7 +68,8 @@ See Supported Parse Types for more
 import useQuery from 'next-query';
 
 function Page() {
-  const { ids } = useQuery({ ids: [Number] }); // Return Type => { ids: number[] };
+  // Return Type => { ids: number[] };
+  const { ids } = useQuery({ ids: [Number] });
   
   ...
 }
@@ -77,7 +81,8 @@ function Page() {
 import useQuery from 'next-query';
 
 function Page() {
-  const { ids, selected } = useQuery({ id: Number, selected: Boolean }); // Return Type => { id: number, selected: boolean };
+  // Return Type => { id: number, selected: boolean };
+  const { ids, selected } = useQuery({ id: Number, selected: Boolean }); 
   
   ...
 }
